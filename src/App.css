@@ -58,4 +58,8 @@ button {
   display: inline;
 }
 
+#rating{
+  display: block;
+  padding: 0.5rem;
+}
 

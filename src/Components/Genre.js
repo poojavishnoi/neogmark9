@@ -7,57 +7,69 @@ function Genre() {
     Action: [
       {
         "name": "The Mark of Zorro",
-        "author": "Johnston McCulley"
+        "author": "Johnston McCulley",
+        "rating": "4/5"
       },
       {
         "name": "Congo",
-        "author": "Michael Crichton"
+        "author": "Michael Crichton",
+        "rating": "3.5/5"
       },
       {
         "name": "The Beach",
-        "author": "Alex Garland"
+        "author": "Alex Garland",
+        "rating": "4/5"
       }
     ],
     Adventure: [
       {
         "name": "The Cruel Sea",
-        "author": "Nicholas Monsarrat"
+        "author": "Nicholas Monsarrat",
+        "rating": "4.1/5"
       },
       {
         "name": "Life of Pi",
-        "author": "Yann Martel"
+        "author": "Yann Martel",
+        "rating": "4/5"
       },
       {
         "name": "Dune",
-        "author": " Frank Herbert"
+        "author": " Frank Herbert",
+        "rating": "4.2/5"
       }
     ],
     Comedy: [
       {
         "name": "wow, no thank you",
-        "author": "Samantha Irby"
+        "author": "Samantha Irby",
+        "rating": "3.8/5"
       },
       {
         "name": "We Are Never Meeting in Real Life ",
-        "author": "Samantha Irby"
+        "author": "Samantha Irby",
+        "rating": "4/5"
       },
       {
         "name": " Less",
-        "author": " Andrew Sean Greer"
+        "author": " Andrew Sean Greer",
+        "rating": "3.6/5"
       }
     ],
     Horror: [
       {
         "name": "House of Leaves",
-        "author": "Mark Z. Danielewski"
+        "author": "Mark Z. Danielewski",
+        "rating": "4/5"
       },
       {
         "name": "Rosemary’s Baby",
-        "author": "Ira Levin"
+        "author": "Ira Levin",
+        "rating": "4/5"
       },
       {
         "name": "The Haunting of Hill House",
-        "author": "Shirley Jackson"
+        "author": "Shirley Jackson",
+        "rating": "3.8/5"
       }
     ]
   }
@@ -86,9 +98,10 @@ function Genre() {
       {
         bookData[genre].map((book) => {
           return (
-            <div>
+            <div key={book.name}>
             <h2 id="title">{book.name}</h2>
             <span id="author">{book.author}</span>
+            <span id="rating">{book.rating}</span>
             </div>
           )
         })
